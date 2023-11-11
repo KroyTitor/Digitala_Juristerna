@@ -10,16 +10,23 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="index.html"><img src="IMG/logo.jpg" alt="Logo"></a>
-        <nav class="primary-navigation">
-          <ul aria-label="Primary" role="list" class="nav-list">
-            <li><a href="#">Prislista</a></li>
-            <li><a href="#">Nyheter</a></li>
-            <li><a href="#">Juridikskola</a></li>
-            <li><a href="#">Samarbeten</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
+        <div class="nav-wrapper">
+          <a href="index.html"><img src="IMG/logo_black.png" alt="Logo" width="150"></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="menu-button-close" src="IMG/menu_button_close.png" alt=""  aria-hidden="true">
+            <img class="menu-button-open" src="IMG/menu_button_open.png" alt="" width="30" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">Prislista</a></li>
+              <li><a href="#">Nyheter</a></li>
+              <li><a href="#">Juridikskola</a></li>
+              <li><a href="#">Samarbeten</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          </div>
       </div>
     </header>
 
@@ -27,41 +34,73 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow" style="--flow-spacer: 1em">
               <h1 class="fs-primary-heading fw-bold">AVTAL TILL FASTA PRISER</h1>
-              <p>Vi riktar oss till startups, små- och medelstora företag i hela landet</p>
-              <img src="IMG/office-1.png" alt="Office" width="500">
+              <p class="intro-p">Vi riktar oss till startups, små- och medelstora företag i hela landet</p>
+              <img src="IMG/office-1.png" alt="Office">
             </div>
-            <div>
-              <ul>
-                <li>Cookiepolicy 2000KR exkl.moms</li>
-                <li>Integreitetspolicy 6000KR exkl.moms</li>
-                <li>Allmänna villkor 8000KR exkl.moms</li>
-                <li>GDPR-paket 15000KR exkl.moms</li>
+            <div class="">
+              <ul class="numbered-items | flow" role="list">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">Cookiepolicy. <br>2000KR exkl.moms</h3> 
+                    <p data-width="wide">Skydda din verksamhet och informera dina besökare med en skräddarsydd cookiepolicy. Vår tjänst hjälper till att säkerställa att din webbplats 
+                      överensstämmer med lagstiftningen kring cookies och online tracking. Vi ser till att din cookiepolicy är tydlig,
+                      lättillgänglig och uppfyller alla juridiska krav, vilket skapar förtroende och transparens gentemot dina användare.
+                    </p>
+                  </div>
+                </li>
+                <li> 
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">Integreitetspolicy. <br>6000KR exkl.moms</h3> 
+                    <p data-width="wide">I en digital värld är skyddet av personlig information viktigare än någonsin. Vår integritetspolicytjänst erbjuder skräddarsydda
+                      lösningar för att säkerställa att din verksamhet hanterar personuppgifter på ett lagligt och säkert sätt. Vi hjälper dig att formulera en policy som inte bara uppfyller 
+                      lagkrav utan också stärker dina kunders förtroende genom att tydligt kommunicera hur deras data skyddas.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">Allmänna villkor. <br>8000KR exkl.moms</h3> 
+                    <p data-width="wide">Allmänna villkor utgör grunden för en trygg affärsrelation. Våra experter hjälper dig att 
+                      utveckla klara och rättvisa villkor för din tjänst eller produkt. Vi ser till att dina villkor är juridiskt bindande, 
+                      förståeliga och anpassade för att skydda både ditt företag och dina kunder, vilket minimerar risken för framtida tvister.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">GDPR-paket. <br>15000KR exkl.moms</h3>
+                    <p data-width="wide">Med vår GDPR-kompetens säkerställer vi att din verksamhet inte bara uppfyller EU:s dataskyddsregler, utan också 
+                      hanterar kunduppgifter på ett ansvarsfullt och säkert sätt. Vårt GDPR-paket omfattar allt från att granska och justera befintliga 
+                      processer till att implementera nya rutiner och policyer, vilket garanterar full överensstämmelse och höjer ditt företags dataskyddsstandard.
+                    </p>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="padding-block-900">
+      <section class="padding-block-900 | bg-neutral-200">
         <div class="container">
-              <h2 class="fs-secondary-heading fw-bold">ANLITA EN JURIST FÖR ATT:</h2>
+              <h2 class="h2-anlita">ANLITA EN JURIST FÖR ATT:</h2>
           <div class="even-columns">
-            <div>
+            <div class="flow" style="--flow-spacer: 2em">
               <h3 class="fs-600 fw-bold">SKRIVA AVTAL</h3>
-              <img src="IMG/lawyer-1.png" alt="Lawyer" width="500">
+              <img src="IMG/lawyer-1.png" alt="Lawyer">
               <button class="button">MER INFORMATION</button>
             </div>
-            <div>
+            <div class="flow" style="--flow-spacer: 2em">
               <h3 class="fs-600 fw-bold">GRANSKA AVTAL</h3>
-              <img src="IMG/lawyer-2.png" alt="Lawyer" width="500">
+              <img src="IMG/lawyer-2.png" alt="Lawyer">
               <button class="button">MER INFORMATION</button>
             </div>
           </div>
         </div>
       </section>
-
+<!--
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
@@ -72,8 +111,10 @@
             </div>
             <div>
               <img src="IMG/judge_gavel.png" alt="gavel" width="100">
+              <div class="title-box">
               <h3 class="fs-secondary-heading fw-bold">FASTA PRISER</h3>
               <p>Vi arbetar enbart med fasta priser och du får alltid vete priset innan du anlitar oss.</p>
+              </div>
             </div>
             <div>
               <img src="IMG/rating_star.png" alt="star" width="100">
@@ -95,40 +136,44 @@
         <h2 class="fs-secondary-heading fw-bold">HÄLSNINGAR FRÅN VÅRA KLIENTER</h2>
         Carousel here
       </section>
-
-      <section class="padding-block-900">
+    -->
+      <section class="padding-block-900 | bg-neutral-200 | title-box">
         <div class="container">
           <div class="even-columns">
-            <img src="IMG/lawyer-3.png" alt="" height="500">
-            <h2 class="fs-secondary-heading fw-bold">VÅRA PRISER</h2>
-            <p>Hos oss kan du beställa avtal och granskning av avtal til fasta priser. Priset inkluderar alltid
-              samtal och genomgång av avtalet med en jurist via dator och telefon. Du får alltid veta priset innan
-              arbetet påbörjas, så att du kan känna dig trygg i vad allt kommer kosta i förväg. Beställer du
-              flera avtal, kan vi erbjuda ett bättre paketpris.</p>
+            <img src="IMG/lawyer-3.png" alt="">
+            <div class="title-box">
+              <div class="title"><h2 class="fs-secondary-heading fw-bold">VÅRA PRISER</h2></div>
+              <p>Hos oss kan du beställa avtal och granskning av avtal til fasta priser. Priset inkluderar alltid
+                samtal och genomgång av avtalet med en jurist via dator och telefon. Du får alltid veta priset innan
+                arbetet påbörjas, så att du kan känna dig trygg i vad allt kommer kosta i förväg. Beställer du
+                flera avtal, kan vi erbjuda ett bättre paketpris.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="padding-block-900">
+      <section class="padding-block-900 | bg-neutral-200 | title-box">
         <div class="container">
           <div class="even-columns">
-            <img src="IMG/lawyer-4.png" alt="" height="500">
-            <h2 class="fs-secondary-heading fw-bold">JURIDIKSKOLA</h2>
-            <p>Vi vill göra juridiken enkel att förstå för alla. Därför har vi startat vår juridikskola, som är helt
-              gratis att använda. Där kan du lära dig mer om juridiska begrepp, gratis avtalsmallar och få svar på
-              vanliga frågor. Dessutom driver vi andra juridikskolor via våra sociala medier på LinkedIn och 
-                Instagram. Du kan även testa dina juridiska kunskaper i våra Juridiska Quiz!</p>
+            <img src="IMG/lawyer-4.png" alt="">
+            <div class="title-box">
+              <div class="title"><h2 class="fs-secondary-heading fw-bold">JURIDIKSKOLA</h2></div>
+              <p>Vi vill göra juridiken enkel att förstå för alla. Därför har vi startat vår juridikskola, som är helt
+                gratis att använda. Där kan du lära dig mer om juridiska begrepp, gratis avtalsmallar och få svar på
+                vanliga frågor. Dessutom driver vi andra juridikskolor via våra sociala medier på LinkedIn och 
+                  Instagram. Du kan även testa dina juridiska kunskaper i våra Juridiska Quiz!</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
         <div class="container">
-          <div class="even columns">
+          <div class="even columns vertical-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">Förenkla dina affärer idag.</p>
+              <p class="fs-primary-heading fw-bold">Förenkla dina affärer idag.</p>
             </div>
-            <div>
+            <div class="justify-self-end-md">
               <button class="button" data-type="inverted">Kontakta oss</button>
             </div>
           </div>
@@ -140,16 +185,26 @@
       <div class="container">
         <div class="even-columns">
           <div>
-            <a href="index.html"><img src="IMG/logo.jpg" alt="Logo"></a>
-            <ul role="list" aria-label="social links">
-              <li><a aria-label="instagram" href="#"></a></li>
-              <li><a aria-label="linkedin" href="#"></a></li>
-              <li><a aria-label="email" href="#"></a></li>
+            <a href="index.html"><img src="IMG/logo_white.png" alt="Logo" width="200"></a>
+
+            <ul class="social-list" role="list" aria-label="social links">
+              <li><a aria-label="instagram" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="IMG/social-icons.svg#instagram"></use>
+                </svg>
+                </a>
+              </li>
+              <li><a aria-label="linkedin" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="IMG/social-icons.svg#linkedin-white"></use>
+                </svg>
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <nav class="footer-nav">
-              <ul aria-label="" role="list">
+              <ul class="flow" style="--flow-spacer: 1em" aria-label="" role="list">
                 <li><a href="#">Prislista</a></li>
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">Juridikskola</a></li>
