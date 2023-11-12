@@ -9,3 +9,18 @@ navToggle.addEventListener("click", () => {
     primaryNav.toggleAttribute("data-visible");
     primaryHeader.toggleAttribute('data-overlay')
 });
+
+// Slider
+const slider = new A11YSlider(document.querySelector('.slider'), {
+   adaptiveHeight: false,
+   dots: true,
+   centerMode: true,
+   arrows: false, 
+   autoplay: true,
+   autoplaySpeed: 12500,
+   responsive: {
+    480: {
+      dots: false, // dots enabled 1280px and up
+    }
+  }
+});
