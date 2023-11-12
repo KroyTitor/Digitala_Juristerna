@@ -20,7 +20,7 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
    autoplaySpeed: 12500,
    responsive: {
     480: {
-      dots: false, // dots enabled 1280px and up
+      dots: false, // dots disabled 480px and up
     }
   }
 });
